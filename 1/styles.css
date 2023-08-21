@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.totalscore {
+  background: linear-gradient(#7857ff, #2e2be9);
+  width: 300px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper {
+  margin: auto;
+  border: 0;
+  margin: 0;
+  display: flex;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  border-radius: 20px;
+  box-shadow: 1.25px 2.5px 40px hsl(241, 100%, 89%);
+}
+
+.totalscore .head {
+  color: hsl(241, 100%, 89%);
+  font-weight: 500;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.score {
+  background: linear-gradient(#4e21ca, #2421ca00);
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score h1 {
+  font-weight: 800;
+  font-size: 60px;
+  margin-bottom: 0;
+  margin-top: 20px;
+  color: white;
+}
+
+.score span {
+  margin-top: 0;
+  color: hsl(241, 100%, 89%);
+}
+
+.totalscore h3 {
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.resultDescription .detail {
+  max-width: 70%;
+  text-align: center;
+  margin: auto;
+  color: hsl(241, 100%, 89%);
+}
+
+.scoresContainer {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.scoresContainer p {
+  align-self: flex-start;
+  margin-left: 30px;
+  margin-bottom: -10px;
+  color: hsl(224, 30%, 27%);
+}
+
+.scoresIndividual {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.reaction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsla(0, 100%, 50%, 0.092);
+  height: 40px;
+  width: 250px;
+  border-radius: 5px;
+}
+
+.icon,
+.reaction1,
+.memory1,
+.verbal1,
+.visual1 {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.reaction1 {
+  color: hsl(0, 100%, 67%);
+  display: flex;
+  flex-direction: row;
+  margin-left: 5px;
+}
+
+.reaction2 {
+  margin-right: 10px;
+}
+
+.memory {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsla(37, 100%, 50%, 0.092);
+  height: 40px;
+  width: 250px;
+  border-radius: 5px;
+}
+
+.memory1 {
+  color: hsl(39, 100%, 56%);
+  display: flex;
+  flex-direction: row;
+  margin-left: 5px;
+}
+.memory2 {
+  margin-right: 10px;
+}
+
+.verbal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsla(149, 100%, 50%, 0.092);
+  height: 40px;
+  width: 250px;
+  border-radius: 5px;
+}
+
+.verbal1 {
+  color: hsl(166, 100%, 37%);
+  display: flex;
+  flex-direction: row;
+  margin-left: 5px;
+}
+.verbal2 {
+  margin-right: 10px;
+}
+
+.visual {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsla(252, 100%, 50%, 0.092);
+  height: 40px;
+  width: 250px;
+  border-radius: 5px;
+}
+
+.visual1 {
+  color: hsl(234, 85%, 45%);
+  display: flex;
+  flex-direction: row;
+  margin-left: 5px;
+}
+.visual2 {
+  margin-right: 10px;
+}
+
+b {
+  color: hsl(224, 30%, 27%);
+}
+
+.overHundred {
+  color: hsl(241, 100%, 89%);
+}
+
+button {
+  background: hsl(224, 30%, 27%);
+  width: 250px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+
+button:hover {
+  background: linear-gradient(#7857ff, #2e2be9);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 414px) {
+  .wrapper {
+    width: 100%;
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+  }
+  .totalscore {
+    width: 100%;
+  }
+
+  .scoresContainer {
+    width: 100%;
+  }
+
+  .scoresContainer p {
+    margin-left: 37.5px;
+  }
+
+  .reaction,
+  .verbal,
+  .visual,
+  .memory {
+    width: 300px;
+  }
+
+  button {
+    width: 300px;
+  }
+}

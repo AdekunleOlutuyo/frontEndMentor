@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+body {
+  background: hsl(30, 38%, 92%);
+}
+
+.container {
+  width: 600px;
+  height: 400px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img {
+  width: 300px;
+  height: 400px;
+  border-radius: 10px 0 0 10px;
+}
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.Perfume {
+  width: 150px;
+  height: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.Gabrielle {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  width: 200px;
+  margin-top: -10px;
+}
+
+.floral {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  max-width: 240px;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: -20px;
+  margin-top: -10px;
+}
+
+.price {
+  width: 240px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price h1 {
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+}
+
+.price span {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  margin-right: 35px;
+}
+
+.cart {
+  width: 14px;
+  height: 14px;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+  padding-top: 12.5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  width: 240px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background: hsl(158, 36%, 37%);
+  color: white;
+  vertical-align: middle;
+}
+
+button:hover {
+  background: hsl(158, 82%, 15%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 355px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    width: 355px;
+    height: 200px;
+    border-radius: 10px, 10px, 0, 0;
+  }
+
+  .productDetails {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px;
+  }
+}
